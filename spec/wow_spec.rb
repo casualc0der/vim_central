@@ -14,8 +14,10 @@ class Wow
 
     "goodbye #{@file}"
   end
+
   def filter
     return :rejected if @file.include?('fick')
+
     :ok
   end
 end
@@ -36,13 +38,13 @@ RSpec.describe 'Wow' do
     end
   end
   context 'ok it can do one more thing' do
-    let(:file) { "" }
+    let(:file) { '' }
     it 'calls the user "pal" if no name is supplied' do
       expect(subject.goodbye).to eq('goodbye pal')
     end
   end
   context 'maybe one more before bed!' do
-    let(:file) { ['fick', 'hello', 'jelly'] }
+    let(:file) { %w[fick hello jelly] }
     it 'rejects a file if it includes a naughty word' do
       expect(subject.filter).to eq(:rejected)
     end
