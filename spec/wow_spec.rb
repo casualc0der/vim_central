@@ -6,7 +6,7 @@ class Wow
   end
 
   def hello
-    'gday mate'.encode
+    'gday mate'
   end
 
   def goodbye
@@ -21,6 +21,7 @@ class Wow
     :ok
   end
 end
+
 
 RSpec.describe 'Wow' do
   subject { Wow.new(file) }
