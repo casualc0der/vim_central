@@ -6,6 +6,7 @@
 - Auto complete (requires solargraph gem for Ruby) [coc-vim](https://github.com/neoclide/coc-solargraph)
 - Add a status bar at the bottom of the terminal [vim-airline](https://github.com/vim-airline/vim-airline)
 - Add fuzzy file searching ($brew install fzf first!)  [FZF](https://github.com/junegunn/fzf.vim)
+- Add git interactivity[fugitive](https://github.com/tpope/vim-fugitive)
 
 
 we should really write a script that will install all of the above...
